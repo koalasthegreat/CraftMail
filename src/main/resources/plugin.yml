@@ -1,0 +1,11 @@
+name: CraftMail
+version: ${project.version}
+main: dev.koalas.craftmail.CraftMail
+api-version: 1.15
+authors: [Koalas]
+description: A mail plugin for sending messages and items
+website: koalas.dev
+commands:
+  mail:
+    description: Send mail to other players
+    usage: /<command> [subcommand]
