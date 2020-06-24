@@ -19,10 +19,8 @@ class CraftMail : JavaPlugin() {
         // Command registration
         val commandCheckMail = CommandCheckMail(this)
         val commandSendMail = CommandSendMail(this)
-        val commandSendItem = CommandSendItem(this)
         commandBase.registerSubCommand("check", commandCheckMail)
         commandBase.registerSubCommand("mail", commandSendMail)
-        commandBase.registerSubCommand("item", commandSendItem)
         getCommand("mail")!!.setExecutor(commandBase)
 
         logger.info("CraftMail is ready")
